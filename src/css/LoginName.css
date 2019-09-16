@@ -1,0 +1,21 @@
+.login-name{
+    color: rgb(226, 225, 225);
+}
+
+.icon-padding{
+    padding-left: 5px;
+}
+
+i.inverted.icon {
+
+    color: rgb(226, 225, 225);
+
+}
+
+i.inverted.icon:hover {
+
+    color: #ffe81f;
+    cursor: pointer;
+
+}
+

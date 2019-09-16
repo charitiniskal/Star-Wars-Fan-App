@@ -1,0 +1,33 @@
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ffe81f;
+    max-width: 300px;
+    min-width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+    background: rgb(88, 88, 88);   
+
+}
+
+.select-style select {
+    color:rgb(204, 204, 204);
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:hover {
+    outline: none;
+    cursor:pointer;
+    border: 1.5px;
+    background: rgb(56, 56, 56); 
+}
+

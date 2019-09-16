@@ -1,0 +1,37 @@
+body{
+    font: 15px/1.5 "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(48, 48, 48);
+    height:100vh;
+}
+
+.app-login{
+   height:100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   background-color: #2e2e2e;
+   margin: auto;
+}
+
+.app-login img{
+    position: absolute;
+    /* width:100%; */
+    height:100%;
+    opacity: 0.03;
+}
+
+.app-browse{
+    width:90%;
+    margin:auto;
+    height:100vh;
+    position: relative;
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
