@@ -1,35 +1,35 @@
 /*This is the main component of the app.
-Several components are imported in this app, <Login/>, <Header/>, <NavigationBar/>, <Elements/>
+Several components are imported in this app, <Login/>, <Header/>, <NavigationBar/>, <Elements/> and others
 The state in the constuctor has been set and username is an empty string.
-As the app is following render method it stays in the if statement where username is empty.
+As the app is moving to the render method it stays in the if statement where username is empty.
 
 User has to set his name and press "Login" button
 <Login/> component, which has triggered the onLoginSubmit function, saves the key username 
 and the username value to the localstorage and sets the state of usename with the username value.
 
-The app is following again the render method and as the username state has been filled, <Header/>, <NavigationBar/>
+The app is moving again to the render method and as the username state has been filled, <Header/>, <NavigationBar/>
 and <Elements/> are rendered.
 
-If the user refreshes the browser, he has not to loggin again.
+If the user refreshes the browser, he has not to login again.
 (A sign-out icon will remove the key and value from the localstorage so the user has to login again.)
 
 The user now is able to select one of options-resources which appear in the filter bar.
-<NavigationBar/> triggers the handleSelectedResource function. The first 10 elements of the resource, that he asked for,
-have been loaded. As he starts scrolling the lazyload function is triggered. When he reaches the bottom of the page 
-(scroll is at the bottom), if the next page exists, another ten elements are fetched, using the continueloading function.
-The same process will be followed recursively untill there is no next page.
+<NavigationBar/> triggers the handleSelectedResource function. The first 10 elements of the resource, that the user
+asked for, have been loaded. As he starts scrolling, the lazyload function is triggered. When he reaches the bottom of 
+the page (scroll is at the bottom), if the next page exists, another ten elements are fetched, using the 
+continueloading function. The same process will be followed recursively untill there is no next page.
 
 The user now can go to the search bar section and do a fuzzy search on the selected resource. The <Searchbar/> component 
 will trigger the <NavigationBar/> component and this triggers the handleSelectedResource function. All the elements from
 the fuzzy search will be rendered using again the lazyload function and the continueloading function.
 
 Now the user may want to see full details of a specific Element. Clicking on an element the onElementClick fuction,
-which lives in the <Elements/> component, is triggered. This  sets state of showInfo to true and the <Elements/> is 
-rendering the info page, which has the <Info/> component.
+which lives in the <Elements/> component, is triggered. This sets the state of showInfo to true and the <Elements/> 
+component is rendering the info page, which has the <Info/> component.
 
 <Info/> component is using the preselected url which has been sent from <Elements/> and get the data of the selected
 element. If there is an image, info shows the image of the element and its data, otherwise it is showing only the elements.
-There is a 'close icon' which is sending back to <Elements/> a boolean, which is set to false, and then the <Info/> disappears
+There is a 'close icon' which is sending back a boolean(false) to <Elements/>, and then the <Info/> disappears
 and the <Elements/> are rendered again.
 
 Used Libraries: 
