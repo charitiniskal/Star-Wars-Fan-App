@@ -3,8 +3,8 @@
 It is a simple app, where a user can get a quick overview over all Star Wars resources
 like heroes, planets...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Used HTTP Client: [axios](https://github.com/axios/axios);
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br>
+Used HTTP Client: [axios](https://github.com/axios/axios).
 
 ## Getting Started
 
@@ -15,6 +15,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+#### Instrctions to run the application
+
+* git clone https://github.com/charitiniskal/Star-Wars-Fan-App.git
+* npm install
+* npm start
 
 ### `npm test`
 
